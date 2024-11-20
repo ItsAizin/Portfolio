@@ -1,0 +1,45 @@
+block content
+ include header
+ +header(Video)
+ .fadeInUp-animation
+  .flexbox
+   .desc
+    img.console(src= val.image alt="Picture of " + val.title)
+    h2 
+     desc= val.desc
+   .bids
+    .newBid
+     h3 Bids
+     button#bidButton Place Bid
+    #hidden.none
+     if val.cookies
+      .bidname
+       label(for='name') Your Name:
+       input#name(type='text' name='name' placeholder= val.cookies_name required='')
+      .bidamount
+       label(for='amount') Amount:
+       input#amount(type='number' name='amount' min='5' step='0.01' placeholder='0.00' required='')
+     else
+      .bidname
+       label(for='name') Your Name:
+       input#name(type='text' name='name' placeholder='Your Name' required='')
+      .bidamount
+       label(for='amount') Amount:
+       input#amount(type='number' name='amount' min='5' step='0.01' placeholder='0.00' required='')
+     .bidcomment
+      label(for='desc') Comment:
+      textarea#desc(name='desc' rows='5' cols='40' placeholder='Your comment')
+     input#id(type='hidden' name='id' value=val.id)
+     input#topbid(type='hidden' name='topbid' value=val.topbid)
+     input#date(type='hidden' name='date' value=val.date)
+     input#numbids(type='hidden' name='numbids' value=val.numbids)
+     input#category(type='hidden' name='category' value=val.category)
+     input#bidsubmit(type='button' value='Submit')
+    #bid_list
+     each bid in bids ? bids : val.bids
+      .bid
+       span.bidder #{bid.name}
+       span.amount $#{bid.amount}
+       p #{bid.comment}
+
+    

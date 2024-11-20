@@ -1,0 +1,85 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <title>Video Game Auction</title>
+            <link rel="stylesheet" href="/main.css">
+            <script async defer src="/js/table.js"></script>
+        </head>
+    
+        <body>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/gallery">Listings</a>
+                <a href="/create">Add Listing</a>
+                    <form action="/gallery" method="get">
+                        <input type="search" name="query" class="search">
+                        <select name="category" class="category">
+                        <option value="All Categories">All Categories</option>
+                        <option value="Consoles">Consoles</option>
+                        <option value="Video Games">Video Games</option>
+                        <option value="Merch">Merch</option>
+                        </select>
+                        <input type="submit" value="Search" class="submit">
+                    </form>
+            </nav>
+
+        <h1>Gallery</h1>
+        <div class="fadeInUp-animation">
+            <div class="tableview">
+                <table class="tableGallery">
+                <thead>
+                    <tr>
+                        <th>Number of Lists</th>
+                        <th>Number of Bids</th>
+                        <th>Category</th>
+                        <th>Top Bid</th>
+                        <th>Sale Date</th>
+                        <th>Time Left</th>
+                        <th></th>      
+                    </tr>
+                </thead>
+                <tbody>
+    
+                <tr data-image="/images/NES" data-description="NES" class="tableRow" data-listing-id="1">
+                    <td><a href=/listing/1 class="listingtitle">NES</a></td>
+                    <td>3</td>
+                    <td>Consoles</td>
+                    <td>$22.21</td>
+                    <td>2024-10-22</td>
+                    <td class="date">2024-10-22</td>
+                    <td><input type="button" value="Delete" class="delete"></td>
+                </tr>
+            
+                <tr data-image="/images/PokemonYellow" data-description="Pokemon" class="tableRow" data-listing-id="2">
+                    <td><a href=/listing/2 class="listingtitle">Pokemon</a></td>
+                    <td>3</td>
+                    <td>Video Games</td>
+                    <td>$22.21</td>
+                    <td>2024-10-22</td>
+                    <td class="date">2024-10-22</td>
+                    <td><input type="button" value="Delete" class="delete"></td>
+                </tr>
+            
+                <tr data-image="/images/Pacman" data-description="Pacman" class="tableRow" data-listing-id="3">
+                    <td><a href=/listing/3 class="listingtitle">Pacman</a></td>
+                    <td>3</td>
+                    <td>Merch</td>
+                    <td>$22.21</td>
+                    <td>2024-11-01</td>
+                    <td class="date">2024-11-01</td>
+                    <td><input type="button" value="Delete" class="delete"></td>
+                </tr>
+            
+                        </tbody>
+                    </table>
+                    <div class="preview">
+                        <div id="previewImg"></div>
+                        <p id="previewDesc"></p>
+                    </div>     
+    
+                </div>
+            </body>
+        </html>

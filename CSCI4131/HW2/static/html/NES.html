@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Video Game Auction</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/gallery">Listings</a>
+            <form action="/gallery" method="get">
+                <input type="search" name="query" class="search">
+                <select name="category" class="category">
+                 <option value="All Categories">All Categories</option>
+                 <option value="Consoles">Consoles</option>
+                 <option value="Video Games">Video Games</option>
+                 <option value="Merch">Merch</option>
+                </select>
+                <input type="submit" value="Search" class="submit">
+             </form>
+    </nav>
+
+    <h1>Nintendo Entertainment System</h1>
+
+    <div class="fadeInUp-animation">
+        <div class="flexbox">
+            <div class="desc">
+                <img src="/images/NES" alt="Picture of NES" class="console">
+                <h2>This is the Nintendo Entertainment System (NES). It is the highest of quality! The item has already sold
+                    off
+                    to the highest bidder.</h2>
+            </div>
+    
+            <div class="bids">
+                <h3>Bids</h3>
+                <div class="bid">
+                    <span class="bidder">Jessie</span>
+                    <span class="amount">$22.21</span>
+                </div>
+                <div class="bid">
+                    <span class="bidder">James</span>
+                    <span class="amount">$12.02</span>
+                </div>
+                <div class="bid">
+                    <span class="bidder">Meowth</span>
+                    <span class="amount">$17.72</span>
+                    <p>That's the name! I want this neowth!</p>
+                </div>
+            </div>
+        </div>    
+    </div>
+</body>
+
+</html>

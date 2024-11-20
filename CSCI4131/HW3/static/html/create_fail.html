@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Game Auction - Create</title>
+    <link rel="stylesheet" href="/main.css">
+    <script async defer src="/js/new_listing.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/gallery">Listings</a>
+            <form action="/gallery" method="get">
+                <input type="search" name="query" class="search">
+                <select name="category" class="category">
+                 <option value="All Categories">All Categories</option>
+                 <option value="Consoles">Consoles</option>
+                 <option value="Video Games">Video Games</option>
+                 <option value="Merch">Merch</option>
+                </select>
+                <input type="submit" value="Search" class="submit">
+             </form>
+    </nav>
+
+    <div class="fadeInUp-animation">
+        <h1>Create listing failed!</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Game Auction - Create</title>
+    <link rel="stylesheet" href="/main.css">
+    <script async defer src="/js/new_listing.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/gallery">Listings</a>
+            <form action="/gallery" method="get">
+                <input type="search" name="query" class="search">
+                <select name="category" class="category">
+                 <option value="All Categories">All Categories</option>
+                 <option value="Consoles">Consoles</option>
+                 <option value="Video Games">Video Games</option>
+                 <option value="Merch">Merch</option>
+                </select>
+                <input type="submit" value="Search" class="submit">
+             </form>
+    </nav>
+
+    <h1>Add a Listing</h1>
+
+    <div class="fadeInUp-animation">
+        <form action="/create" method="post" class="create">
+            <div class="title">
+                <label for="title">Title:</label>
+                <input type="text" name="title" placeholder="Listing title">     
+            </div>
+    
+            <div class="image">
+                <label for="image">Image URL:</label>
+                <input type="url" name="image" placeholder="https://example.com/image.jpg">
+            </div>
+    
+            <div class="desc">
+                <label for="desc">Description:</label>
+                <textarea name="desc" rows="5" cols="40"></textarea>
+            </div>
+    
+            <div class="create_category">
+                <label for="category">Category:</label>
+                <select name="category" id="category">
+                    <option value="All Categories">All Categories</option>
+                    <option value="Consoles">Consoles</option>
+                    <option value="Video Games">Video Games</option>
+                    <option value="Merch">Merch</option>
+                    <option value="Other" id="other">Other</option>
+                </select>
+            </div>
+
+            <div id="hidden" class="none">
+                <input type="text" name="hidden" placeholder="List the category">
+            </div>
+
+            <div class="date">
+                <label for="date">Sale Date:</label>
+                <input type="date" name="date" id="date">
+            </div>
+
+            <input type="submit" class="create_submit" value="Submit">
+        </form>    
+    </div>
+</body>
+</html>

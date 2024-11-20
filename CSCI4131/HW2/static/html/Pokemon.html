@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Video Game Auction - Pokemon Yellow</title>
+    <link rel="stylesheet" href="/css/main">
+</head>
+
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/gallery">Listings</a>
+            <form action="/gallery" method="get">
+                <input type="search" name="query" class="search">
+                <select name="category" class="category">
+                 <option value="All Categories">All Categories</option>
+                 <option value="Consoles">Consoles</option>
+                 <option value="Video Games">Video Games</option>
+                 <option value="Merch">Merch</option>
+                </select>
+                <input type="submit" value="Search" class="submit">
+             </form>
+    </nav>
+
+    <h1>Pokemon Yellow</h1>
+
+    <div class="fadeInUp-animation">
+        <div class="flexbox">
+            <div class="desc">
+                <img src="/images/PokemonYellow" alt="Picture of Pokemon Yellow" class="console">
+                <h2>This is the Pokemon Yellow. It is the highest of quality! The item has already sold
+                    off
+                    to the highest bidder.</h2>
+            </div>
+    
+            <div class="bids">
+                <h3>Bids</h3>
+                <div class="bid">
+                    <span class="bidder">Charizard</span>
+                    <span class="amount">$22.21</span>
+                </div>
+                <div class="bid">
+                    <span class="bidder">Pikachu</span>
+                    <span class="amount">$12.02</span>
+                    <p>Pika Pika!</p>
+                </div>
+                <div class="bid">
+                    <span class="bidder">Bulbasaur</span>
+                    <span class="amount">$17.72</span>
+                </div>
+            </div>
+        </div>    
+    </div>
+</body>
+
+</html>

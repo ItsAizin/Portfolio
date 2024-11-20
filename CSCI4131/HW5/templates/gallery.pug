@@ -1,0 +1,30 @@
+block content
+ include header
+ +header(Gallery)
+ .fadeInUp-animation
+   .tableview
+     table.tableGallery
+       thead
+         tr
+           th Number of Lists
+           th Number of Bids
+           th Category
+           th Top Bid
+           th Sale Date
+           th Time Left
+           th
+       tbody
+        each n in renderListings ? renderListings : [renderListings]
+         tr.tableRow(data-image= n.image data-description= n.title data-listing-id= n.id)
+          td
+           a.listingtitle(href= n.link) #{n.title}
+          td #{n.numbids}
+          td #{n.category}
+          td $#{n.topbid}
+          td #{n.date}
+          td.date #{n.date}
+          td
+           input.delete(type='button' value='Delete')
+     .preview
+      #previewImg
+      p#previewDesc

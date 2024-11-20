@@ -1,0 +1,28 @@
+block content
+ include header
+ +header(Create)
+ .fadeInUp-animation
+   form.create(action='/create' method='post')
+    .title
+     label(for='title') Title:
+     input(type='text' name='title' placeholder='Listing title')
+    .image
+     label(for='image') Image URL:
+     input(type='url' name='image' placeholder='https://example.com/image.jpg')
+    .desc
+     label(for='desc') Description:
+     textarea(name='desc' rows='5' cols='40')
+    .create_category
+     label(for='category') Category:
+     select#category(name='category')
+      option(value='All Categories') All Categories
+      option(value='Consoles') Consoles
+      option(value='Video Games') Video Games
+      option(value='Merch') Merch
+      option#other(value='Other') Other
+    #hidden.none
+     input(type='text' name='hidden' placeholder='List the category')
+    .salt_date
+     label(for='date') Sale Date: 
+     input#date(type='date' name='date')
+    input.create_submit(type='submit' value='Submit')

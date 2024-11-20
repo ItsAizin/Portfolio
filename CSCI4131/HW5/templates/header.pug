@@ -1,0 +1,23 @@
+mixin header(title)
+ doctype html
+ head
+  meta(charset='UTF-8')/
+  title= title
+  <link rel="stylesheet" type="text/css" href="/css/main.css" />
+  script(async='' defer='' type="text/javascript" src='/js/new_listing.js')
+  script(async='' defer='' type="text/javascript" src='/js/bid.js')
+  script(async='' defer='' type="text/javascript" src='/js/table.js')
+  div.nav
+   a(href='/') Home
+   a(href='/gallery') Listings
+   a(href='/create') Add Listing
+   form(action='/gallery' method='get')
+     input.search(type='search' name='query')
+     select.category(name='category')
+       option(value='All Categories') All Categories
+       option(value='Consoles') Consoles        
+       option(value='Video Games') Video Games
+       option(value='Merch') Merch
+     input.submit(type='submit' value='Search')
+ body
+  h1= title

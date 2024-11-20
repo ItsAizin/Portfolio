@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@keyframes fadeInUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+
+.fadeInUp-animation {
+    animation: 1.5s fadeInUp;
+}
+
+html {
+    font-family: "DM Sans", system-ui;
+    background-color: white;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 7vh;
+    color: #efb11d;
+}
+
+h2 {
+    color: #d6536d;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+nav {
+    background-color: #e43d12;
+}
+
+nav form  { 
+    padding: 1vh 10em 1em 0;
+    float: right;
+}
+
+nav a {
+    color: #efb11d;
+    font-size: 4vh;
+    margin: 5em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #efb11d;
+    color:#ebe9e1;
+    transition: ease-in-out all .4s; 
+    -moz-transition: ease-in-out all .4s;
+    -webkit-transition: ease-in-out all .4s;
+}
+
+.submit { 
+    border-radius: 10%;
+    cursor: pointer;
+    border: none;
+    height: 2.5em;
+    margin-left: 1em;
+}
+
+.submit:hover {
+    background-color: #efb11d;
+    color:#ebe9e1;
+    transition: ease-in-out all .2s; 
+    -moz-transition: ease-in-out all .4s;
+    -webkit-transition: ease-in-out all .4s;
+}
+
+.category {
+    margin-left: 1em;
+    min-height: 2.5em;
+}
+
+
+.search {
+    min-width: 3em;
+    min-height: 3.5vh;
+}
+
+.videoGames {
+    border-style: solid;
+    border-color: #efb11d;
+    border-radius: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.console {
+    border-style: solid;
+    border-color: #efb11d;
+    border-radius: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.homepage-cont { 
+    padding-top: 5%;
+    padding-right: 10%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.description {
+    font-size: 1.35em;
+    padding: 1%;
+    background-color: #ebe9e1;
+    width: 50%;
+}
+
+table {
+    margin: auto;
+    width: 75%;
+    line-height: 9vh;
+    font-size: 2em;
+    text-align: center;
+}
+
+thead {
+    background-color: #d6536d;
+}
+
+tbody tr:nth-child(even) {
+    background-color:#ebe9e1;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffa2b6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flexbox { 
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-left: 10%;
+    margin-top: 1%;
+    margin-right: 10%;
+}
+
+.desc {
+    width: 50%;
+}
+
+.desc h2 {
+    background-color: #ebe9e1;
+    color: black;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.bids { 
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: center;
+    font-size: 2.35em;
+}
+
+.bids h3 { 
+    text-underline-offset: 50%;
+    text-decoration: underline solid black .25vh;
+}
+
+.bid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5%;
+    column-gap: 5em;
+    background-color: #ebe9e1;
+    margin-bottom: 2vh;
+    border-radius: 1em;
+    border-style: solid;
+    border-color: #efb11d;
+    
+}
+
+.bidder {
+    font-weight: bold;
+    font-style: italic;
+    float: left;
+}
+
+.amount {
+    float: right;
+}
+
+.bid p { 
+    font-style: italic;
+    text-align: left;
+}
+

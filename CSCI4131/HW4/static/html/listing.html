@@ -1,0 +1,97 @@
+
+                <!DOCTYPE html>
+                <html lang="en">
+
+                <head>
+                    <meta charset="UTF-8">
+                    <title>Video Game Auction</title>
+                    <link rel="stylesheet" href="/main.css">
+                    <script async defer src="/js/bid.js"></script>
+                </head>
+            
+        <body>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/gallery">Listings</a>
+                <a href="/create">Add Listing</a>
+                    <form action="/gallery" method="get">
+                        <input type="search" name="query" class="search">
+                        <select name="category" class="category">
+                        <option value="All Categories">All Categories</option>
+                        <option value="Consoles">Consoles</option>
+                        <option value="Video Games">Video Games</option>
+                        <option value="Merch">Merch</option>
+                        </select>
+                        <input type="submit" value="Search" class="submit">
+                    </form>
+            </nav>
+
+                <h1>NES</h1>
+
+                <div class="fadeInUp-animation">
+                    <div class="flexbox">
+                        <div class="desc">
+                            <img src="/images/NES" alt="Picture of NES" class="console">
+                            <h2>This is the Nintendo Entertainment System (NES). It is the highest of quality! The item has already sold off to the highest bidder.</h2>
+                        </div>
+                
+                        <div class="bids">
+                            <div class="newBid">
+                                <h3>Bids</h3>
+                                <button id="bidButton">Place Bid</button>
+                            </div>
+                
+                <div id="hidden" class="none">
+                                    <div class="bidname">
+                                        <label for="name">Your Name:</label>
+                                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                                    </div>
+                                    
+                                    <div class="bidamount">
+                                        <label for="amount">Amount:</label>
+                                        <input type="number" name="amount" id="amount" min="5" step="0.01" placeholder="0.00" required>
+                                    </div>
+                                
+                                    <div class="bidcomment">
+                                        <label for="desc">Comment:</label>
+                                        <textarea name="desc" id="desc" rows="5" cols="40" placeholder="Your comment"></textarea>
+                                    </div>
+                                        <input type="hidden" name="id" id="id" value="1">
+                                                                            
+                                        <input type="hidden" name="topbid" id="topbid" value="22.21">
+                                        
+                                        <input type="hidden" name="date" id="date" value="2024-10-22">
+                                        
+                                        <input type="hidden" name="numbids" id="numbids" value="3">
+                                        
+                                        <input type="hidden" name="category" id="category" value="Consoles">
+
+                                        <input type="button" value="Submit" id="bidsubmit">
+                            </div>
+                <div id="bid_list">
+                
+                    <div class="bid">
+                        <span class="bidder">Jessie</span>
+                        <span class="amount">$22.21</span>
+                        <p></p>
+                    </div>
+                
+                    <div class="bid">
+                        <span class="bidder">James</span>
+                        <span class="amount">$12.02</span>
+                        <p></p>
+                    </div>
+                
+                    <div class="bid">
+                        <span class="bidder">Meowth</span>
+                        <span class="amount">$17.72</span>
+                        <p>That's the name! I want this neowth!</p>
+                    </div>
+                
+                </div>
+            </div>
+        </div>   
+    
+                </div>
+            </body>
+        </html>
