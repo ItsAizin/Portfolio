@@ -1,0 +1,28 @@
+=====================================================================================================================================================
+== Test 3: Two-Element Pipeline With Output Redirection
+== Runs a pipeline consisting of two programs. The last program has its output
+== redirected to a file.
+Running test...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Step 1
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Action 1: Run Execute Pipeline
+-- Run the 2-program pipeline in the swish shell
+Expected output is in file 'test_results/raw/swish_shell_pipeline_tests-3-1-expected.tmp'
+Actual output is in file 'test_results/raw/swish_shell_pipeline_tests-3-1-actual.tmp'
+Test FAILED
+== Side-by-Side Comparison ==
+== Differing lines have a character like '|' '>' or '<' in the middle
+==== EXPECT ====                ==== ACTUAL ====
+@> echo hello | cat > out.txt   @> echo hello | cat > out.txt
+@> exit                       | strvec_find: Success
+                              > dup2: Bad file descriptor
+                              > strvec_find: Bad file descriptor
+== Line Differences ==
+EXPECT 2) @> exit
+ACTUAL 2) strvec_find: Success
+ACTUAL 3) dup2: Bad file descriptor
+ACTUAL 4) strvec_find: Bad file descriptor
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Step 2
+Not executed due to error(s) in previous step

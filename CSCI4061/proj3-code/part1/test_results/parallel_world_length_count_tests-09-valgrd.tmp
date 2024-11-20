@@ -1,0 +1,24 @@
+==1744532== Memcheck, a memory error detector
+==1744532== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1744532== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1744532== Command: ./par_word_lengths test_cases/resources/multi_line.txt
+==1744532== Parent PID: 1744458
+==1744532== 
+==1744533== 
+==1744533== HEAP SUMMARY:
+==1744533==     in use at exit: 0 bytes in 0 blocks
+==1744533==   total heap usage: 3 allocs, 3 frees, 8,764 bytes allocated
+==1744533== 
+==1744533== All heap blocks were freed -- no leaks are possible
+==1744533== 
+==1744533== For lists of detected and suppressed errors, rerun with: -s
+==1744533== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1744532== 
+==1744532== HEAP SUMMARY:
+==1744532==     in use at exit: 0 bytes in 0 blocks
+==1744532==   total heap usage: 1 allocs, 1 frees, 1,024 bytes allocated
+==1744532== 
+==1744532== All heap blocks were freed -- no leaks are possible
+==1744532== 
+==1744532== For lists of detected and suppressed errors, rerun with: -s
+==1744532== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

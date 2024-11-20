@@ -1,0 +1,4 @@
+@> cat < test_cases/resources/numbers.txt | wc -l
+strvec_find: Success
+dup2: Bad file descriptor
+strvec_find: Bad file descriptor

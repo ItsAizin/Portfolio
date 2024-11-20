@@ -1,0 +1,33 @@
+==1744506== Memcheck, a memory error detector
+==1744506== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1744506== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1744506== Command: ./par_word_lengths test_cases/resources/one_word.txt test_cases/resources/one_word_2.txt
+==1744506== Parent PID: 1744458
+==1744506== 
+==1744517== 
+==1744517== HEAP SUMMARY:
+==1744517==     in use at exit: 0 bytes in 0 blocks
+==1744517==   total heap usage: 3 allocs, 3 frees, 8,764 bytes allocated
+==1744517== 
+==1744517== All heap blocks were freed -- no leaks are possible
+==1744517== 
+==1744517== For lists of detected and suppressed errors, rerun with: -s
+==1744517== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1744518== 
+==1744518== HEAP SUMMARY:
+==1744518==     in use at exit: 0 bytes in 0 blocks
+==1744518==   total heap usage: 3 allocs, 3 frees, 8,764 bytes allocated
+==1744518== 
+==1744518== All heap blocks were freed -- no leaks are possible
+==1744518== 
+==1744518== For lists of detected and suppressed errors, rerun with: -s
+==1744518== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1744506== 
+==1744506== HEAP SUMMARY:
+==1744506==     in use at exit: 0 bytes in 0 blocks
+==1744506==   total heap usage: 1 allocs, 1 frees, 1,024 bytes allocated
+==1744506== 
+==1744506== All heap blocks were freed -- no leaks are possible
+==1744506== 
+==1744506== For lists of detected and suppressed errors, rerun with: -s
+==1744506== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

@@ -1,0 +1,51 @@
+==1744539== Memcheck, a memory error detector
+==1744539== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1744539== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1744539== Command: ./par_word_lengths test_cases/resources/multi_line.txt test_cases/resources/multi_line_2.txt test_cases/resources/multi_line_3.txt test_cases/resources/multi_line_4.txt
+==1744539== Parent PID: 1744458
+==1744539== 
+==1744540== 
+==1744540== HEAP SUMMARY:
+==1744540==     in use at exit: 0 bytes in 0 blocks
+==1744540==   total heap usage: 3 allocs, 3 frees, 8,764 bytes allocated
+==1744540== 
+==1744540== All heap blocks were freed -- no leaks are possible
+==1744540== 
+==1744540== For lists of detected and suppressed errors, rerun with: -s
+==1744540== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1744541== 
+==1744541== HEAP SUMMARY:
+==1744541==     in use at exit: 0 bytes in 0 blocks
+==1744541==   total heap usage: 3 allocs, 3 frees, 8,764 bytes allocated
+==1744541== 
+==1744541== All heap blocks were freed -- no leaks are possible
+==1744541== 
+==1744541== For lists of detected and suppressed errors, rerun with: -s
+==1744541== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1744542== 
+==1744542== HEAP SUMMARY:
+==1744542==     in use at exit: 0 bytes in 0 blocks
+==1744542==   total heap usage: 3 allocs, 3 frees, 8,764 bytes allocated
+==1744542== 
+==1744542== All heap blocks were freed -- no leaks are possible
+==1744542== 
+==1744542== For lists of detected and suppressed errors, rerun with: -s
+==1744542== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1744543== 
+==1744543== HEAP SUMMARY:
+==1744543==     in use at exit: 0 bytes in 0 blocks
+==1744543==   total heap usage: 3 allocs, 3 frees, 8,764 bytes allocated
+==1744543== 
+==1744543== All heap blocks were freed -- no leaks are possible
+==1744543== 
+==1744543== For lists of detected and suppressed errors, rerun with: -s
+==1744543== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1744539== 
+==1744539== HEAP SUMMARY:
+==1744539==     in use at exit: 0 bytes in 0 blocks
+==1744539==   total heap usage: 1 allocs, 1 frees, 1,024 bytes allocated
+==1744539== 
+==1744539== All heap blocks were freed -- no leaks are possible
+==1744539== 
+==1744539== For lists of detected and suppressed errors, rerun with: -s
+==1744539== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

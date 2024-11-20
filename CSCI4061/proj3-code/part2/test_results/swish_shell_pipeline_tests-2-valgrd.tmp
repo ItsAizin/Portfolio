@@ -1,0 +1,86 @@
+==1865330== Memcheck, a memory error detector
+==1865330== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1865330== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1865330== Command: ./swish
+==1865330== Parent PID: 1865323
+==1865330== 
+==1865330== 
+==1865330== HEAP SUMMARY:
+==1865330==     in use at exit: 143 bytes in 8 blocks
+==1865330==   total heap usage: 16 allocs, 8 frees, 3,727 bytes allocated
+==1865330== 
+==1865330== 8 bytes in 3 blocks are still reachable in loss record 1 of 4
+==1865330==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1865330==    by 0x10971F: strvec_add (string_vector.c:50)
+==1865330==    by 0x1099C9: strvec_slice (string_vector.c:117)
+==1865330==    by 0x109D0F: run_pipelined_commands (swish_funcs.c:116)
+==1865330==    by 0x109512: main (swish.c:49)
+==1865330== 
+==1865330== 32 bytes in 1 blocks are still reachable in loss record 2 of 4
+==1865330==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1865330==    by 0x1095A7: strvec_init (string_vector.c:10)
+==1865330==    by 0x109993: strvec_slice (string_vector.c:113)
+==1865330==    by 0x109D0F: run_pipelined_commands (swish_funcs.c:116)
+==1865330==    by 0x109512: main (swish.c:49)
+==1865330== 
+==1865330== 39 bytes in 3 blocks are still reachable in loss record 3 of 4
+==1865330==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1865330==    by 0x10971F: strvec_add (string_vector.c:50)
+==1865330==    by 0x109E65: tokenize (in /home/bran1281/CSCI4061/proj3-code/part2/swish)
+==1865330==    by 0x10944F: main (swish.c:28)
+==1865330== 
+==1865330== 64 bytes in 1 blocks are still reachable in loss record 4 of 4
+==1865330==    at 0x483DFAF: realloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1865330==    by 0x1096BD: strvec_add (string_vector.c:41)
+==1865330==    by 0x109E65: tokenize (in /home/bran1281/CSCI4061/proj3-code/part2/swish)
+==1865330==    by 0x10944F: main (swish.c:28)
+==1865330== 
+==1865330== LEAK SUMMARY:
+==1865330==    definitely lost: 0 bytes in 0 blocks
+==1865330==    indirectly lost: 0 bytes in 0 blocks
+==1865330==      possibly lost: 0 bytes in 0 blocks
+==1865330==    still reachable: 143 bytes in 8 blocks
+==1865330==         suppressed: 0 bytes in 0 blocks
+==1865330== 
+==1865330== For lists of detected and suppressed errors, rerun with: -s
+==1865330== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1865366== 
+==1865366== HEAP SUMMARY:
+==1865366==     in use at exit: 143 bytes in 8 blocks
+==1865366==   total heap usage: 18 allocs, 10 frees, 5,223 bytes allocated
+==1865366== 
+==1865366== 8 bytes in 3 blocks are still reachable in loss record 1 of 4
+==1865366==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1865366==    by 0x10971F: strvec_add (string_vector.c:50)
+==1865366==    by 0x1099C9: strvec_slice (string_vector.c:117)
+==1865366==    by 0x109D0F: run_pipelined_commands (swish_funcs.c:116)
+==1865366==    by 0x109512: main (swish.c:49)
+==1865366== 
+==1865366== 32 bytes in 1 blocks are still reachable in loss record 2 of 4
+==1865366==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1865366==    by 0x1095A7: strvec_init (string_vector.c:10)
+==1865366==    by 0x109993: strvec_slice (string_vector.c:113)
+==1865366==    by 0x109D0F: run_pipelined_commands (swish_funcs.c:116)
+==1865366==    by 0x109512: main (swish.c:49)
+==1865366== 
+==1865366== 39 bytes in 3 blocks are still reachable in loss record 3 of 4
+==1865366==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1865366==    by 0x10971F: strvec_add (string_vector.c:50)
+==1865366==    by 0x109E65: tokenize (in /home/bran1281/CSCI4061/proj3-code/part2/swish)
+==1865366==    by 0x10944F: main (swish.c:28)
+==1865366== 
+==1865366== 64 bytes in 1 blocks are still reachable in loss record 4 of 4
+==1865366==    at 0x483DFAF: realloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1865366==    by 0x1096BD: strvec_add (string_vector.c:41)
+==1865366==    by 0x109E65: tokenize (in /home/bran1281/CSCI4061/proj3-code/part2/swish)
+==1865366==    by 0x10944F: main (swish.c:28)
+==1865366== 
+==1865366== LEAK SUMMARY:
+==1865366==    definitely lost: 0 bytes in 0 blocks
+==1865366==    indirectly lost: 0 bytes in 0 blocks
+==1865366==      possibly lost: 0 bytes in 0 blocks
+==1865366==    still reachable: 143 bytes in 8 blocks
+==1865366==         suppressed: 0 bytes in 0 blocks
+==1865366== 
+==1865366== For lists of detected and suppressed errors, rerun with: -s
+==1865366== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

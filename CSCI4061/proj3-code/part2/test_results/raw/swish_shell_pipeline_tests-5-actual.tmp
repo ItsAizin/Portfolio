@@ -1,0 +1,8 @@
+@> cat test_cases/resources/numbers.txt | sort -rn | tail -n 10
+dup2: Bad file descriptor
+strvec_find: Success
+dup2: Bad file descriptor
+strvec_find: Bad file descriptor
+dup2: Bad file descriptor
+strvec_find: Bad file descriptor
+strvec_find: Bad file descriptor
